@@ -43,10 +43,11 @@
 
     .hero { padding: clamp(64px, 12vw, 132px) 0 84px; }
     .eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
-    h1 { max-width: 780px; margin: 18px 0 16px; font-size: clamp(3rem, 9vw, 6.8rem); line-height: .98; letter-spacing: -.075em; }
+    h1 { max-width: 920px; margin: 18px 0 18px; font-size: clamp(2.6rem, 7.2vw, 5.6rem); line-height: 1.08; letter-spacing: -.075em; }
     h1 span { color: var(--accent); }
-    .intro { width: max-content; max-width: 100%; margin: 0; color: var(--text); font-size: clamp(1rem, 2.2vw, 1.2rem); white-space: nowrap; }
-    .hero-note { margin: 12px 0 0; color: var(--muted); font-size: .96rem; }
+    .hero-greeting { margin: 0 0 5px; color: #dce5f6; font-size: clamp(1.05rem, 2.4vw, 1.28rem); font-weight: 650; }
+    .intro { max-width: 640px; margin: 0; color: var(--muted); font-size: clamp(.98rem, 2vw, 1.08rem); }
+    .hero-note { margin: 10px 0 0; color: var(--muted); font-size: .94rem; }
     .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
     .meta-pill { border: 1px solid var(--line); background: rgba(255,255,255,.035); border-radius: 999px; padding: 9px 14px; color: #d7e1f4; font-size: .86rem; }
 
@@ -90,7 +91,6 @@
     @media (max-width: 680px) {
       .wrap { width: min(var(--max-width), calc(100% - 32px)); }
       .hero { padding-top: 72px; padding-bottom: 58px; }
-      .intro { white-space: normal; }
       .interest-grid { grid-template-columns: 1fr; }
       .project-row { grid-template-columns: 1fr; gap: 8px; padding: 20px; }
       .skill-group { grid-template-columns: 1fr; gap: 10px; }
@@ -115,7 +115,8 @@
   <main id="top" class="wrap">
     <section class="hero" aria-labelledby="page-title">
       <div class="eyebrow">Quantitative Investing · Portfolio</div>
-      <h1 id="page-title">안녕하세요,<br><span>fintech14</span>입니다.</h1>
+      <h1 id="page-title">데이터로 시장을 읽고,<br><span>전략으로 기회를 포착합니다.</span></h1>
+      <p class="hero-greeting">안녕하세요, fintech14입니다.</p>
       <p class="intro">시장 데이터와 정량적 분석으로 투자 기회를 발굴하는 트레이더입니다.</p>
       <p class="hero-note">데이터에서 신호를 찾고, 구조화된 전략으로 연결합니다.</p>
       <div class="hero-meta" aria-label="관심 분야">
@@ -166,7 +167,7 @@
           <div class="project-number">PROJECT 02</div>
           <div class="project-info">
             <h3>Factor Analysis Toolkit</h3>
-            <p>투자 팩터 성과를 비교하고 시각화해 전략 아이��어를 검증하는 분석 툴입니다.</p>
+            <p>투자 팩터 성과를 비교하고 시각화해 전략 아이디어를 검증하는 분석 툴입니다.</p>
           </div>
           <span class="project-status">링크 준비 중</span>
         </article>
